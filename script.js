@@ -11,7 +11,7 @@ diminuirFonteBotao.addEventListener('click', function(){
         document.body.style.fontSize=${tamanhoAtualFonte}rem
     })
     document.addEventListener ('DOMContentLoaded', function(){
-        const botaode|Acessibilidade = document.getElemntBuId ('botao-acessibilidade');
+        const botaodeAcessibilidade = document.getElemntBuId ('botao-acessibilidade');
         const opcoesdeAcessibilidade = document.getElementById ('opcoes-acessibilidade');
         
         botaodeAcessibilidade.addeventListener("click", function(){

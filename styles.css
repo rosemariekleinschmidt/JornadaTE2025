@@ -140,13 +140,63 @@ h2 {
 .form-control {
     background-color: #F1EDEF;
 }
-.menu-acessibilidade{
+.menu-acessibilidade {
     position: fixed;
     top: 2rem;
     right: 20px;
     z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
-.rotacao-botao{ 
+
+.rotacao-botao {
     transform: rotate(-90deg);
-    transform-origin: right-center;    
+    transform-origin: center;
+    padding: 10px 15px;
+    border-radius: 50% !important;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.rotacao-botao.ativo {
+    transform: rotate(0deg);
+}
+
+.opcoes-acessibilidade {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.opcoes-acessibilidade.mostrar {
+    display: flex;
+}
+
+/* Estilos para o modo noturno */
+body.modo-noturno {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+body.modo-noturno header {
+    background-color: #1e1e1e;
+}
+
+body.modo-noturno .nav-link {
+    color: #ff862a;
+}
+
+body.modo-noturno .formulario {
+    background-color: #2d2d2d;
+    color: #f1f1f1;
 }
